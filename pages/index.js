@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
@@ -20,10 +21,11 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <nav className={styles.mainnav}>
           <ul className={styles.navlist}>
-            <li>Home</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            
+            <Link href="/"><li>Home</li></Link>
+            <Link href="/about"><li>About</li></Link>
+            <Link href="/blog"><li>Blog</li></Link>
+            <Link href="/contact"><li>Contact</li></Link>
           </ul>
         </nav>
 
@@ -95,8 +97,8 @@ export default function Home() {
             <p>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
+          
           </a>
-
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}

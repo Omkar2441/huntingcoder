@@ -1,0 +1,3 @@
+if we want route to work for getting data from url 
+use the userouter of next 
+nextjs can use both a tag and link tag to do the same work but a tag reloads the page and link does not
